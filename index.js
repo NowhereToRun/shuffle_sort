@@ -1,3 +1,7 @@
+/**
+ * 排序的就这一个函数
+ * 别的都是渲染demo用的
+ */
 Array.prototype.shuffle = function() {
   let array = this;
   let len = array.length;
@@ -6,6 +10,7 @@ Array.prototype.shuffle = function() {
     [array[i], array[j]] = [array[j], array[i]];
   }
 }
+
 
 const tBody = document.querySelector('.j_t_body');
 const allRow = tBody.children;
